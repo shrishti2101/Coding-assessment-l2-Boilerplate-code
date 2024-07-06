@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <div class="container" style="width: 90%">
+      <div class="header" style="text-align: center">
+        <h1>Select Your Choice</h1>
+      </div>
+      <div class="tabs">
+        <button class="tablinks active" data-tab="Men">
+          <img src="./Assets/fluent-emoji-high-contrast_boy@2x.png" alt="Men" />
+          Men
+        </button>
+        <button class="tablinks" data-tab="Women">
+          <img
+            src="./Assets/fluent-emoji-high-contrast_girl@2x.png"
+            alt="Men"
+          />Women
+        </button>
+        <button class="tablinks" data-tab="Kids">
+          <img src="./Assets/Vector@2x.png" alt="Men" />Kids
+        </button>
+      </div>
+
+      <div class="tab-content">
+        <div id="Men" class="tabcontent" style="display: block">
+          <div id="product-data-men">Loading product data...</div>
+        </div>
+
+        <div id="Women" class="tabcontent">
+          <div id="product-data-women">Loading product data...</div>
+        </div>
+
+        <div id="Kids" class="tabcontent">
+          <div id="product-data-kids">Loading product data...</div>
+        </div>
+      </div>
     </div>
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
